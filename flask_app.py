@@ -42,6 +42,15 @@ def contato():
 def sobre():
     return render_template('sobre.html')
 
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+
+
+
+
 ## Para rodar o projeto em desenvolvimento
 
 if __name__ == '__main__':
