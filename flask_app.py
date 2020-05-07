@@ -24,7 +24,7 @@ db.create_all()
 @app.route('/inicio')
 @app.route('/')
 def mostra_inicio():
-    return render_template('index.html')
+    return render_template('inicio.html')
 
 # @app.route('/api/funcionarios', methods=['GET', 'POST'])
 # def funcionarios():
