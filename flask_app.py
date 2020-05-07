@@ -43,9 +43,9 @@ def sobre():
     return render_template('sobre.html')
 
 
-@app.route('/loginlogin')
-def login():
-    return render_template('login.html')
+# @app.route('/login')
+# def login():
+#     return render_template('login.html')
 
 
 
