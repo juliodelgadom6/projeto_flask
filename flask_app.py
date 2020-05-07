@@ -24,7 +24,7 @@ db.create_all()
 @app.route('/inicio')
 @app.route('/')
 def mostra_inicio():
-    return render_template('inicio.html')
+    return render_template('index.html')
 
 # @app.route('/api/funcionarios', methods=['GET', 'POST'])
 # def funcionarios():
@@ -43,7 +43,7 @@ def sobre():
     return render_template('sobre.html')
 
 
-@app.route('/login')
+@app.route('/loginlogin')
 def login():
     return render_template('login.html')
 
