@@ -53,7 +53,7 @@ const raiz = document.getElementById('lista');
 
 // xhr.send();
 
-fetch('http://juliovasque.pythonanywhere.com/api/funcionarios') // GET por default
+fetch('/funcionarios') // GET por default
 .then(res => {return res.json();})
 .then(data => {
     data.funcionarios.forEach(element => {
@@ -67,7 +67,7 @@ fetch('http://juliovasque.pythonanywhere.com/api/funcionarios') // GET por defau
         linha.appendChild(funcionario);
 
         var hora = document.createElement('td');
-        hora.textContent = element.data;
+        hora.textContent = element.hora;
         linha.appendChild(hora);
     });
 })
