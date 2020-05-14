@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-from pytz import timezone
+# from pytz import timezone
 
 app = Flask(__name__)
 
@@ -18,8 +18,8 @@ db = SQLAlchemy(app)
 class Apontamento(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     nome_usuario = db.Column(db.String(25), nullable=True)
-    # hora = db.Column(db.DateTime, default=datetime.now)
-    hora = db.Column(db.DateTime, default=datetime.now().astimezone(timezone('America/Sao_Paulo')))
+    hora = db.Column(db.DateTime, default=datetime.now)
+    # hora = db.Column(db.DateTime, default=datetime.now().astimezone(timezone('America/Sao_Paulo')))
 
 # class Usuario(db.Model)
 #     login = 
