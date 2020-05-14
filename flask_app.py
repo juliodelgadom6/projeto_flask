@@ -33,7 +33,7 @@ class Apontamento(db.Model):
             'hora': str(self.hora)[11:16]
         }
 
-db.create_all()
+# db.create_all()
 
 @app.route('/inicio')
 @app.route('/')
